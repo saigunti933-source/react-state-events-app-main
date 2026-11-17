@@ -1,0 +1,87 @@
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  transition: background-color 250ms ease;
+}
+
+.color-card {
+  width: min(100%, 520px);
+  padding: 42px 28px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.94);
+  text-align: center;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.16);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #667085;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin: 0;
+  color: #172033;
+  font-size: clamp(30px, 6vw, 42px);
+}
+
+.description {
+  margin: 14px 0 28px;
+  color: #596579;
+  line-height: 1.6;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.color-button {
+  min-width: 100px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.color-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+.color-button:focus-visible {
+  outline: 3px solid #172033;
+  outline-offset: 3px;
+}
+
+.color-button.red {
+  background: #e53935;
+}
+
+.color-button.blue {
+  background: #2463eb;
+}
+
+.color-button.green {
+  background: #159447;
+}
+
+.color-button.yellow {
+  background: #d99a00;
+}
+
+.current-color {
+  margin: 26px 0 0;
+  color: #344054;
+  text-transform: capitalize;
+}
